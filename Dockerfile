@@ -12,9 +12,9 @@ RUN conda create -n trinity-env && \
     conda install -n trinity-env -c bioconda bowtie 
 
 RUN conda create -n busco-env && \
-    conda install -n busco-env -c conda-forge biopython && \ 
-    conda install -n busco-env -c bioconda busco && \ 
     conda install -n busco-env python=3.9 && \
+    conda install -n busco-env -c conda-forge biopython && \ 
+    conda install -n busco-env -c bioconda busco && \
     conda install -n busco-env -c conda-forge pandas && \
     conda install -n busco-env -c conda-forge jellyfish && \ 
     conda install -n busco-env -c bioconda blast && \ 
